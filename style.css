@@ -1,0 +1,289 @@
+/* CSS untuk mengatur tampilan iframe */
+iframe {
+    width: 100%;
+    /* Menyesuaikan lebar iframe dengan lebar kontainer */
+    height: 1005px;
+    /* Mengatur tinggi iframe */
+    border: 1px solid #003366;
+    /* Menambahkan garis tepi dengan warna abu-abu */
+    border-radius: 5px;
+    /* Mengatur sudut border */
+    box-shadow: #003366;
+    /* Menambahkan bayangan pada iframe */
+    display: block;
+    /* Membuat iframe tampil sebagai blok */
+    margin: 0 auto;
+    /* Memberikan margin otomatis secara horizontal */
+    margin-top: 20px;
+    /* Memberikan margin di bagian atas */
+}
+
+.iframe-container {
+    text-align: center;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+}
+
+li {
+    list-style: none;
+}
+
+div a {
+    text-decoration: none;
+}
+
+.toggle_btn {
+    display: none;
+}
+
+.fixed1 {
+    position: fixed;
+    background-color: #003366;
+    border-bottom: 1px solid #FFFFFF ;
+    color: #FFFFFF ;
+    font-weight: bold;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.logo-nama p {
+    color: rgb(255, 255, 255);
+    /* Mengatur warna teks menjadi cyan */
+}
+
+.article1 {
+    margin-top: 80px;
+    /* Ubah margin atas agar ada jarak antara teks dan navbar */
+}
+
+.flex-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.grid-gap {
+    grid-gap: 30px;
+}
+
+.text-decoration {
+    text-decoration: none;
+}
+
+.bg-menu {
+    background-color: #FFFFFF ;
+    border-radius: 25px;
+    padding: 10px 20px;
+    width: 100px;
+    color: black;
+    text-align: center;
+}
+
+.logo-nama:hover {
+    color: white;
+    transition: 0.5s;
+}
+
+/* MAIN */
+.intro {
+    text-align: center;
+    /* Posisikan teks ke tengah */
+    color: #003366;
+    /* Ubah warna teks menjadi cyan */
+    font-weight: bold;
+    /* Jadikan teks tebal */
+    font-size: 25px;
+}
+
+.judul-h1 {
+    text-align: center;
+    /* Posisikan teks ke tengah */
+    color: #003366;
+    font-size: 30px;
+}
+
+.penjelasan-article1 {
+    text-align: center;
+    /* Posisikan teks ke tengah */
+    color: rgb(0, 0, 0);
+    font-style: italic;
+
+}
+
+.container {
+    margin-left: 100px;
+    margin-right: 100px;
+    color: rgb(0, 0, 0);
+}
+
+.container2 {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-profile {
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+
+.container {
+    display: flex;
+    /* Menjadikan konten dalam satu baris */
+    justify-content: space-between;
+    /* Membuat jarak seimbang antara elemen */
+    margin: 0 auto;
+    /* Pusatkan konten */
+    max-width: 1200px;
+    /* Lebar maksimum konten */
+    padding: 20px;
+    /* Padding */
+}
+
+.card1 {
+    flex-basis: calc(33.33% - 20px);
+    /* Lebar relatif setiap card */
+    background-color: #f2f2f2;
+    /* Warna latar belakang */
+    border-radius: 10px;
+    /* Sudut border */
+    padding: 20px;
+    /* Padding */
+    margin: 0 10px;
+    /* Jarak antara setiap card */
+    text-align: center;
+    /* Posisikan teks judul ke tengah */
+}
+
+.img-article2 {
+    width: 100%;
+    /* Lebar gambar 100% dari kontainer */
+    border-radius: 5px;
+    /* Sudut border gambar */
+    margin-bottom: 10px;
+    /* Margin bawah */
+}
+
+.judul-card {
+    color: #2600ff;
+    /* Warna teks judul */
+    font-size: 18px;
+    /* Ukuran font judul */
+    margin-bottom: 10px;
+    /* Margin bawah */
+}
+
+.penjelasan-card {
+    color: #666;
+    /* Warna teks penjelasan */
+    font-size: 16px;
+    /* Ukuran font penjelasan */
+    line-height: 1.5;
+    /* Line height */
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.button {
+    background-color: #003366; /* Warna latar belakang */
+    border: none; /* Menghapus border */
+    color: white; /* Warna teks */
+    padding: 15px 32px; /* Padding */
+    text-align: center; /* Posisi teks */
+    text-decoration: none; /* Menghapus dekorasi teks */
+    display: inline-block; /* Menjadikan tombol sebagai blok inline */
+    font-size: 16px; /* Ukuran font */
+    margin: 4px 2px; /* Margin */
+    cursor: pointer; /* Mengubah kursor saat diarahkan ke tombol */
+    border-radius: 10px; /* Sudut border */
+    transition-duration: 0.4s; /* Durasi efek transisi */
+}
+
+.button:hover {
+    background-color: #45a049; /* Warna latar belakang saat dihover */
+}
+
+#iframe-genap {
+    display: none;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1em;
+    font-family: sans-serif;
+    min-width: 400px;
+}
+
+table thead tr {
+    background-color: #003366; /* Biru Tua */
+    color: #ffffff;
+    text-align: left;
+}
+
+table th, table td {
+    padding: 12px 15px;
+    border: 1px solid #dddddd;
+}
+
+table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+table tbody tr:last-of-type {
+    border-bottom: 2px solid #003366; /* Biru Tua */
+}
+
+/* Style for login form */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+
+.footer {
+    background-color: #003366;
+    color: #ffffff;
+    text-align: center;
+    padding: 0.3px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    margin-bottom: 5px;
+}
+
+.footer-desain {
+    font-size: 0.9em;
+}
+
+.footer-nama {
+    font-weight: bold;
+}
+

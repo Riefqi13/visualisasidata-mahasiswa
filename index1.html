@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualisasi Data Mahasiswa</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body onload="checkLoginStatus()">
+    <!-- Header Start -->
+    <header>
+        <nav class="fixed1">
+            <div class="flex-nav margin-navbar">
+                <div> 
+                    <a href="https://www.linkedin.com/in/riefqi-716080262/" target="_blank" class="text-decoration logo-nama">
+                        <p>RIEFQI</p>
+                    </a>
+                </div>
+                <div id="myLinks" class="flex-nav grid-gap hamburger-menu" style="margin-top: 20px;">
+                    <li><a href="#dashboard" class="text-decoration bg-menu">Dashboard</a></li>
+                    <li><a href="#statistik" class="text-decoration bg-menu">Statistik</a></li>
+                    <li><a href="#Prestasi" class="text-decoration bg-menu">Prestasi</a></li>
+                </div>
+                <a href="javascript:void(0);" class="toggle_btn" onclick="myFunction()">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+                <button class="logout-button" style="margin-top: 20px;" onclick="logout()">Logout</button>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Header End -->
+
+    <!-- Dashboard Section Start -->
+    <article class="article1" id="dashboard">
+        <h1 class="judul-h1">Universitas XYZ</h1>
+        <p class="penjelasan-article1">Dashboard Visualisasi Data Mahasiswa FTI Periode 2012-2022</p>
+        <div class="iframe-container">
+            <iframe id="iframe-ganjil" class="iframe" src="https://lookerstudio.google.com/embed/reporting/ed72d9b2-7df2-4c9b-9ac2-9aa851a53905/page/KzvpD" frameborder="0" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
+            <iframe id="iframe-genap" class="iframe" src="https://lookerstudio.google.com/embed/reporting/1cd7bbb6-c953-497f-99d4-10c8f89bfd6d/page/KzvpD" frameborder="0" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
+        </div>
+        <div class="button-container">
+            <button class="button" onclick="showGanjil()">Data Ganjil</button>
+            <button class="button" onclick="showGenap()">Data Genap</button>
+        </div>
+        <div class="container teks-pengenalan" style="background-color: #f5f5f5; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+            <p>
+                Pada Dashboard Visualisasi Data Mahasiswa di atas terdapat Peta Lokasi dengan titik-titik sebaran Mahasiswa di dalamnya. Pada Visualisasi di atas terdapat Total mahasiswa FTI sebanyak 3793 mahasiswa, yang terdiri dari 2608 Laki-laki dan 1185 perempuan, visualisasi tersebut juga terdapat perbandingan Total Mahasiswa tiap program studi.
+                <br><br>
+                Terdapat juga kontrol filter yang digunakan untuk melakukan pencarian berdasarkan tahun masuk dan program studi. Tetapi data diatas merupakan data miror yang didapat dari Lembaga Layanan Pendidikan Tinggi Wilayah III, oleh karena itu, terdapat beberapa kemungkinan kesalahan dan data mahasiswa yang mungkin tidak lengkap.
+            </p>
+        </div>
+    </article>
+    <!-- Dashboard Section End -->
+
+    <hr style="border: 1px solid #003366">
+
+    <!-- Statistik Section Start -->
+    <article class="article1" id="statistik">
+        <h1 class="judul-h1">Statistik</h1>
+        <p class="penjelasan-article1">Beberapa Statistik IPK Mahasiswa dan Status Mahasiswa Yang Telah Dikumpulkan Seperti Berikut Ini</p>
+        <iframe width="100%" height="450" src="https://lookerstudio.google.com/embed/reporting/50875f35-bf11-4ed7-94b6-544d2c70f754/page/fSI5D" frameborder="0" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
+        <h1 class="judul-h1">Insight</h1>
+        <p class="penjelasan-article1">Di bawah ini adalah rata-rata IPK tiap Program Studi</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Program Studi</th>
+                    <th>2012</th>
+                    <th>2013</th>
+                    <th>2014</th>
+                    <th>2015</th>
+                    <th>2016</th>
+                    <th>2017</th>
+                    <th>2018</th>
+                    <th>2019</th>
+                    <th>2020</th>
+                    <th>2021</th>
+                    <th>2022</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Informatika</td>
+                    <td>2.20</td>
+                    <td>2.32</td>
+                    <td>2.32</td>
+                    <td>1.91</td>
+                    <td>NuLL</td>
+                    <td>2.72</td>
+                    <td>2.78</td>
+                    <td>2.74</td>
+                    <td>3.03</td>
+                    <td>2.74</td>
+                    <td>2.60</td>
+                </tr>
+                <tr>
+                    <td>Sistem Informasi</td>
+                    <td>1.84</td>
+                    <td>2.20</td>
+                    <td>1.96</td>
+                    <td>2.64</td>
+                    <td>2.39</td>
+                    <td>2.50</td>
+                    <td>2.98</td>
+                    <td>2.99</td>
+                    <td>3.02</td>
+                    <td>3.20</td>
+                    <td>2.55</td>
+                </tr>
+                <tr>
+                    <td>Teknik Elektro</td>
+                    <td>2.41</td>
+                    <td>2.60</td>
+                    <td>2.86</td>
+                    <td>2.95</td>
+                    <td>3.23</td>
+                    <td>2.99</td>
+                    <td>3.08</td>
+                    <td>3.11</td>
+                    <td>3.30</td>
+                    <td>3.38</td>
+                    <td>3.30</td>
+                </tr>
+                <tr>
+                    <td>Teknik Industri</td>
+                    <td>2.51</td>
+                    <td>2.49</td>
+                    <td>2.81</td>
+                    <td>2.69</td>
+                    <td>2.75</td>
+                    <td>2.93</td>
+                    <td>2.88</td>
+                    <td>2.43</td>
+                    <td>2.93</td>
+                    <td>2.97</td>
+                    <td>2.56</td>
+                </tr>
+                <tr>
+                    <td>Teknik Mesin</td>
+                    <td>2.15</td>
+                    <td>1.91</td>
+                    <td>2.58</td>
+                    <td>2.60</td>
+                    <td>2.22</td>
+                    <td>2.50</td>
+                    <td>2.73</td>
+                    <td>2.59</td>
+                    <td>3.14</td>
+                    <td>2.92</td>
+                    <td>2.57</td>
+                </tr>
+            </tbody>
+        </table>
+    </article>
+    <!-- Statistik Section End -->
+
+    <hr style="border: 1px solid #003366">
+
+    <!-- Prestasi Section Start -->
+    <article class="article1" id="Prestasi">
+        <h1 class="judul-h1">Prestasi</h1>
+        <p class="penjelasan-article1">Beberapa Prestasi Mahasiswa Yang Telah Dikumpulkan Seperti Berikut Ini</p>
+        <iframe width="100%" height="450" src="https://lookerstudio.google.com/embed/reporting/11192035-7c64-4b37-a53e-daf778b4afde/page/OmI5D" frameborder="0" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
+    </article>
+    <!-- Prestasi Section End -->
+    <h1 class="judul-h1">Insight</h1>
+        <p class="penjelasan-article1">Di bawah ini adalah insight prestasi mahasiswa Fakultas Teknologi Inustri</p>
+    <div class="container teks-pengenalan" style="background-color: #f5f5f5; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        Pada visualisasi data prestasi mahasiswa di atas, kita fokus pada Fakultas Teknologi Industri di Universitas XYZ. 
+        Hanya ada 9 mahasiswa berprestasi dari 3 program studi di fakultas ini, dengan distribusi sebagai berikut:
+        <br><br>
+        - 66,7% dari Teknik Industri<br>
+        - 22,2% dari Teknik Elektro<br>
+        - 11,1% dari Teknik Informatika<br><br>
+        Dari 3 program studi tersebut, prestasi mahasiswa dalam kejuaraan kompetisi per jenis prestasi adalah:
+        <br><br>
+        6 mahasiswa Teknik Industri dan 2 mahasiswa Teknik Elektro mengikuti kompetisi sains.<br>
+        Mahasiswa Teknik Informatika berprestasi dalam kompetisi olahraga.
+    </div>
+   <!-- Footer Start -->
+   <footer class="footer" id="footer">
+    <br>
+    <span class="footer-desain">Copyright ©2024 Design By <span class="footer-nama">
+Riefqi </span></span>
+    <br>
+    <br>
+</footer>
+<!-- Footer End -->
+
+</body>
+
+</html>
